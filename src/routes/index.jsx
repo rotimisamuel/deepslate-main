@@ -8,7 +8,7 @@ import HomepageFive from "../pages/HomeFive";
 import HomepageSix from "../pages/HomeSix";
 import HomepageSeven from "../pages/HomeSeven";
 import HomepageEight from "../pages/HomeEight";
-import HomepageNine from "../pages/Homenine";
+import HomepageNine from "../pages/HomeNine";
 import HomepageTen from "../pages/HomeTen";
 import ResetPasswordPage from "../pages/ResetPasswordPage";
 import SignInPage from "../pages/SignInPage";
