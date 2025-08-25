@@ -1,50 +1,50 @@
 [
   {
-    "iconSrc": "./image/home-7/feature-1.svg",
-    "title": "Website Migration",
-    "description": "Website migration redirects all of your old webpages to new pages or changing site.",
+    "iconSrc": "./image/home-7/feature-1.png",
+    "title": "Cloud Solutions & Infrastructure",
+    "description": "Design and deployment of scalable, secure, and resilient cloud environments.",
     "aos": 800
   },
   {
-    "iconSrc": "./image/home-7/feature-2.svg",
-    "title": "Business Hosting",
-    "description": "Hosting gives you the tools you need to run website and  portions of your business.",
+    "iconSrc": "./image/home-7/feature-4.svg",
+    "title": "Data & Analytics",
+    "description": "Unlocking insights through data strategy, analytics platforms, and AI-driven solutions.",
     "aos": 700
   },
   {
-    "iconSrc": "./image/home-7/feature-3.svg",
-    "title": "E-commerce Hosting",
-    "description": "Our servers support a best open-source eCommerce tools & includes features.",
+    "iconSrc": "./image/home-7/feature-5.svg",
+    "title": "Cybersecurity & Risk Management",
+    "description": "Protecting critical assets with advanced security frameworks and compliance support.",
     "aos": 600
   },
   {
-    "iconSrc": "./image/home-7/feature-4.svg",
-    "title": "Website Builder",
-    "description": "Build a professional website for free with us. Also mobile-friendly & modern templates. ",
+    "iconSrc": "./image/home-7/feature-8.svg",
+    "title": "Digital Transformation",
+    "description": "Aligning technology adoption with organizational goals for measurable impact. ",
     "aos": 500
   },
   {
-    "iconSrc": "./image/home-7/feature-5.svg",
-    "title": "PCI Compliance",
-    "description": "The PCI Security Standards Council operates programs to train, test, and qualify.",
+    "iconSrc": "./image/home-7/feature-6.svg",
+    "title": "Process Optimization & Innovation",
+    "description": "treamlining workflows and introducing innovative solutions to boost efficiency and performance.",
     "aos": 400
   },
   {
-    "iconSrc": "./image/home-7/feature-6.svg",
-    "title": "Blog Hosting",
-    "description": "Blogging solutions for first-time bloggers as well as the seasoned with experts.",
+    "iconSrc": "./image/home-7/feature-7.svg",
+    "title": "Digital Skills Training",
+    "description": "Building essential digital literacy for individuals and teams.",
     "aos": 300
   },
   {
-    "iconSrc": "./image/home-7/feature-7.svg",
-    "title": "Data Backup",
-    "description": "Data backup is the practice of copying data a primary to a secondary location.",
+    "iconSrc": "./image/home-7/feature-7x.png",
+    "title": "Technology Upskilling Programs",
+    "description": " Hands-on training in emerging technologies such as cloud, AI, and DevOps.",
     "aos": 200
   },
   {
-    "iconSrc": "./image/home-7/feature-8.svg",
-    "title": "Website Security",
-    "description": "Website security is any action taken or application put in place to ensure.",
+    "iconSrc": "./image/home-7/feature-8x.png",
+    "title": "Leadership & Change Readiness",
+    "description": "Preparing leaders and staff to navigate and sustain digital transformation.",
     "aos": 100
   }
 ]

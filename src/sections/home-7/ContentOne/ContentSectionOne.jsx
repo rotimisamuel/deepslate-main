@@ -9,10 +9,10 @@ const settingProps = {
     ],
     lists: {
       items: [
-        "Assess & Align – Understand needs and goals",
-        "Innovate & Implement – Deliver tailored technology solutions",
-        "Educate & Empower – Upskill teams for lasting impact",
-        "Scale & Sustain – Build resilient, future-ready systems"
+        "Assess and align business needs and goals",
+        "Innovate and implement tailored technology solutions",
+        "Educate and empower upskill teams for lasting impact",
+        "Scale and sustain resilient, future-ready systems"
       ],
       bullet_image: "icon-check-black.svg",
     },

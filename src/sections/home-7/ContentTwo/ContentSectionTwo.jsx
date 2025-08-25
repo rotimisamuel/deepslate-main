@@ -2,21 +2,22 @@ import ContentBlock from "@components/Layout/Content/ContentBlock";
 
 const settingProps = {
   contentBlock: {
-    title: "Speed up your website outside of any hassle",
+    title: "Generative AI Strategy & Upskilling",
     titleClass: "heading-lg heading-lg--cabin text-l7-primary",
     text: [
-      "Speed is a key factor in increasing your website in terms of visitors, purchase orders, user experience, and SEO.",
+      "At Deepslate, we help organizations unlock the full potential of Generative AI with strategies that are practical, scalable, and tailored to your industry.",
     ],
     lists: {
       items: [
-        "99.99% uptime and security monitoring",
-        "Hosting control panel contains multi-tools",
-        "WordPress is quick and easy to setup",
+        "Evaluate processes and data maturity",
+        "Define a clear AI adoption path",
+        "Ensure responsible and ethical AI",
+        "Support pilots and enterprise rollout"
       ],
       bullet_image: "icon-check-black.svg",
     },
     badge: {
-      text: "More Speed, Less Latency",
+      text: "Do more with GenAI",
       class: "badge badge--purple",
     },
   },
