@@ -28,19 +28,14 @@ const HeroSection = () => {
             <div className="home-7_hero-content">
               <div className="home-7_hero-content-text">
                 <span className="badge badge--white">
-                  Top-Rated Technology & 
-                  Education consulting provider
+                  Your Partner in Tech & Education
                 </span>
                 <h1 className="hero-content__title heading-xxl fw-700">
                   Technology and 
                   Education Consulting 
                 </h1>
                 <p>
-                  Expert technology guidance and training, 
-                  trusted by thousands of professionals, 
-                  teams, and organisations who emand reliable 
-                  solutions and high performance in their 
-                  digital journey!
+                 Learn, Build, Deploy, Perform — with Confidence.
                 </p>
               </div>
               <div className="home-7_hero-content-button">
