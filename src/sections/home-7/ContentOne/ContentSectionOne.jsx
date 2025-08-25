@@ -2,15 +2,23 @@ import ContentBlock from "@components/Layout/Content/ContentBlock";
 
 const settingProps = {
   contentBlock: {
-    title: "Secure web hosting that grows with your business",
+    title: "Digital Transformation",
     titleClass: "content-title heading-lg heading-lg--cabin text-l7-primary",
     text: [
-      "Our web host provides the hosting technology and resources required for your website's efficient and secure operation.",
-      "We are responsible for keeping the servers running, implementing security measures, and ensuring that data such as text, photos, and other files are successfully transferred to visitors' browsers.",
+      "At Deepslate, we help organizations embrace digital transformation with strategies, tools, and training that unlock growth and resilience. Our approach combines deep industry knowledge with practical innovation — ensuring every transformation delivers measurable results."
     ],
+    lists: {
+      items: [
+        "Assess & Align – Understand needs and goals",
+        "Innovate & Implement – Deliver tailored technology solutions",
+        "Educate & Empower – Upskill teams for lasting impact",
+        "Scale & Sustain – Build resilient, future-ready systems"
+      ],
+      bullet_image: "icon-check-black.svg",
+    },
 
     badge: {
-      text: "Hosting For Every Website",
+      text: "Transform your business",
       class: "badge badge--yellow",
     },
   },

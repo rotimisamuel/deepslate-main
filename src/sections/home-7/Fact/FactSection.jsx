@@ -9,8 +9,8 @@ const FactSection = () => {
                 <img src="/image/home-7/fact-icon-1.svg" alt="image alt" />
               </div>
               <div>
-                <h3 className="fact-widget_title">Loyalty to clients</h3>
-                <p>97% Of our customers would recommend us to a friend</p>
+                <h3 className="fact-widget_title">Innovative mindset</h3>
+                <p>We challenge limits and create the future, in education and Tech.</p>
               </div>
             </div>
           </div>
@@ -20,9 +20,9 @@ const FactSection = () => {
                 <img src="/image/home-7/fact-icon-2.svg" alt="image alt" />
               </div>
               <div>
-                <h3 className="fact-widget_title">Service response</h3>
+                <h3 className="fact-widget_title">Service Quality</h3>
                 <p>
-                  110k+ Active services <br /> helping our clients succeed
+                  We go beyond limits to < br/> create scalable, future-ready solutions.
                 </p>
               </div>
             </div>
@@ -33,8 +33,8 @@ const FactSection = () => {
                 <img src="/image/home-7/fact-icon-3.svg" alt="image alt" />
               </div>
               <div>
-                <h3 className="fact-widget_title">Global acceptance</h3>
-                <p>250 Countries/territories where people choose our hosting</p>
+                <h3 className="fact-widget_title">Global Relevance</h3>
+                <p> We provide tailored solutions for business needs, built to scale globally.</p>
               </div>
             </div>
           </div>

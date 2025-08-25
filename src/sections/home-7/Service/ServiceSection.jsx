@@ -3,10 +3,10 @@ import data from "./data";
 const ServiceSection = () => {
   const settingProps = {
     sectionHeading: {
-      title: "All the hosting services your business needs",
+      title: "Technology, Education and Consulting Services",
       column: "col-xxl-6 col-lg-7 col-md-9",
       badge: {
-        text: "Unlimited Web Hosting",
+        text: "Our Services",
         class: "badge badge--blue",
       },
       classes: {

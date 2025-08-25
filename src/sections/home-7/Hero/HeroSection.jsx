@@ -35,7 +35,7 @@ const HeroSection = () => {
                   Education Consulting 
                 </h1>
                 <p>
-                 Learn, Build, Deploy, Perform — with Confidence.
+                 Learn, Build, Deploy, Perform — with Confidence!
                 </p>
               </div>
               <div className="home-7_hero-content-button">
