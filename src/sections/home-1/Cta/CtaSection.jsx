@@ -16,7 +16,7 @@ const CtaSection = () => {
             <div className="col-xl-auto col-lg-4 col-md-5 col-xs-8 col-10">
               <div className="cta-base__button">
                 <Button
-                  href="/contact"
+                  href="/contact-3"
                   className="btn-masco rounded-pill btn-fill--up"
                 >
                   <span>Let's start the project</span>

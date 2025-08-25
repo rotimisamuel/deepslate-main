@@ -7,7 +7,7 @@ const CtaSection = () => {
         <div className="cta-content-block">
           <div className="cta-text-block">
             <h2 className=" heading-lg heading-lg--cabin text-white">
-              Sign up for the best web hosting today
+              Sign up for our news letter today
             </h2>
           </div>
           <div className="cta-form-wrapper">

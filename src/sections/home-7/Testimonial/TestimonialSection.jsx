@@ -37,7 +37,7 @@ const TestimonialSection = () => {
                     What clients say about our services
                   </h2>
                   <p>
-                    Over the last two years, DeepSLate has accumulated many
+                    Over the last two years, DeepSlate has accumulated many
                     testimonials, reviews, and awards for better service.
                   </p>
                 </div>

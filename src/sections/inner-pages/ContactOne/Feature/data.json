@@ -8,13 +8,13 @@
   {
     "iconSrc": "/image/contact-details/feature-icon-2.svg",
     "title": "Give us a call",
-    "description": "Give us a ring at (+088-234-567-90). Every monday-friday from 9 am to 5 pm.",
+    "description": "Give us a ring at (+44 737 9499 922). Every monday-friday from 9 am to 5 pm.",
     "aos": 600
   },
   {
     "iconSrc": "/image/contact-details/feature-icon-3.svg",
     "title": "Email Us",
-    "description": "Drop us an email at example@gmail.com and you'll receive a reply within 24 hours.",
+    "description": "Drop us an email at hello@deepslate.co and you'll receive a reply within 24 hours.",
     "aos": 500
   }
 ]

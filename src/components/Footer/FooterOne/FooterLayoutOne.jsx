@@ -12,14 +12,12 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                   <img src={`/image/${logo}`} alt="image alt" />
                 </div>
                 <p>
-                  We are strategic & creative digital agency who are focused on
-                  user experience, mobile, social, data gathering and
-                  promotional offerings.
+                  DeepSlate is a reputable technology and consulting firm with great expertise in digital transformation and AI and digital strategy.
                 </p>
               </div>
 
               <a href="#" className="footer-link">
-                mascoexample@gmail.com
+                hello@deepslate.co
               </a>
               <br />
               <ul
@@ -54,16 +52,16 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 <h3 className="footer-title">Primary Pages</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Demos</a>
-                  </li>
-                  <li>
-                    <a href="#">About Us</a>
+                    <a href="#">Home</a>
                   </li>
                   <li>
                     <a href="#">Services</a>
                   </li>
                   <li>
-                    <a href="#">Pages</a>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
                   </li>
                   <li>
                     <a href="#">Contact</a>
@@ -71,43 +69,38 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 </ul>
               </div>
               <div className="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 className="footer-title">Utility pages</h3>
+                <h3 className="footer-title">Services</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Instructions</a>
+                    <a href="#">Cloud Solutions</a>
                   </li>
                   <li>
-                    <a href="#">Style guide</a>
+                    <a href="#">Data Analytics</a>
                   </li>
                   <li>
-                    <a href="#">Licenses</a>
+                    <a href="#">Cybersecurity & <br/> Risk Management</a>
                   </li>
                   <li>
-                    <a href="#">404 Not found</a>
-                  </li>
-                  <li>
-                    <a href="#">Password protected</a>
+                    <a href="#">Digital Transformation</a>
                   </li>
                 </ul>
               </div>
               <div className="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 className="footer-title">Resources</h3>
+                <h3 className="footer-title">Services</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Support</a>
+                    <a href="#">Process Optimization & Innovation</a>
                   </li>
                   <li>
-                    <a href="#">Privacy policy</a>
+                    <a href="#">Digital Skills Training</a>
                   </li>
                   <li>
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Technology Upskilling Programs</a>
                   </li>
                   <li>
-                    <a href="#">Strategic finance</a>
+                    <a href="#">Leadership & Change Readiness</a>
                   </li>
-                  <li>
-                    <a href="#">Video guide</a>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -117,7 +110,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
       <div className="copyright-block">
         <div className="container">
           <div className="copyright-inner text-center  copyright-border">
-            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+            <p>© Copyright 2025, All Rights Reserved by DeepSlate Ltd.</p>
           </div>
         </div>
       </div>

@@ -31,8 +31,7 @@ const HeroSection = () => {
                   Your Partner in Tech & Education
                 </span>
                 <h1 className="hero-content__title heading-xxl fw-700">
-                  Technology and 
-                  Education Consulting 
+                  AI Strategy <br /> & Digital <br /> Transformation
                 </h1>
                 <p>
                  Learn, Build, Deploy, Perform — with Confidence!

@@ -41,7 +41,7 @@ const ContactMainSection = () => {
                   <div className="feature-widget-6__body">
                     <h3 className="feature-widget-6__title">Give us a call</h3>
                     <p>
-                      Give us a ring at <span>(+088-234-567-90)</span>. Every
+                      Give us a ring at <span>(+44 737 9499 922)</span>. Every
                       monday-friday from 9 am to 5 pm.
                     </p>
                   </div>
@@ -61,7 +61,7 @@ const ContactMainSection = () => {
                   <div className="feature-widget-6__body">
                     <h3 className="feature-widget-6__title">Email Us</h3>
                     <p>
-                      Drop us an email at <span>example@gmail.com</span> and
+                      Drop us an email at <span>hello@deepslate.co</span> and
                       you'll receive a reply within 24 hours.
                     </p>
                   </div>

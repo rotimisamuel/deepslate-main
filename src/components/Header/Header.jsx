@@ -99,19 +99,14 @@ const Header = ({
           </div>
 
           <div className="header-cta-btn-wrapper">
-            <a
-              href="#"
-              className="btn-masco btn-masco--header btn-masco--header-secondary"
-            >
-              <span>Login</span>
-            </a>
+           
 
             <Button
               href="#"
               animation={btnAnimation}
               className={signUpButtonClass}
             >
-              Sign up free
+              Contact Us
             </Button>
           </div>
         </nav>
