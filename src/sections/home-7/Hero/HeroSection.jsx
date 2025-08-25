@@ -31,12 +31,15 @@ const HeroSection = () => {
                   Top-Rated Technology and Education consulting provider
                 </span>
                 <h1 className="hero-content__title heading-xxl fw-700">
-                  Technology and Education Consulting 
+                  Technology and 
+                  Education Consulting 
                 </h1>
                 <p>
-                  Expert technology guidance and training, trusted by thousands
-                   of professionals, teams, and organisations who
-                  demand reliable solutions and high performance in their digital journey!
+                  Expert technology guidance and training, 
+                  trusted by thousands of professionals, 
+                  teams, and organisations who emand reliable 
+                  solutions and high performance in their 
+                  digital journey!
                 </p>
               </div>
               <div className="home-7_hero-content-button">
