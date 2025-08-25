@@ -28,7 +28,8 @@ const HeroSection = () => {
             <div className="home-7_hero-content">
               <div className="home-7_hero-content-text">
                 <span className="badge badge--white">
-                  Top-Rated Technology and Education consulting provider
+                  Top-Rated Technology & 
+                  Education consulting provider
                 </span>
                 <h1 className="hero-content__title heading-xxl fw-700">
                   Technology and 
