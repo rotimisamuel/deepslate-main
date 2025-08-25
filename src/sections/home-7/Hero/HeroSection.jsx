@@ -28,15 +28,15 @@ const HeroSection = () => {
             <div className="home-7_hero-content">
               <div className="home-7_hero-content-text">
                 <span className="badge badge--white">
-                  Top-Rated Website Hosting Provider
+                  Top-Rated Technology and Education consulting provider
                 </span>
                 <h1 className="hero-content__title heading-xxl fw-700">
-                  Fast &amp; reliable web hosting for your website
+                  Technology and Education Consulting 
                 </h1>
                 <p>
-                  Save time and money with a simple and reliable cloud hosting
-                  trusted by 90,000+ agencies, developers, and businesses who
-                  demand high performance from their websites!
+                  Expert technology guidance and training, trusted by thousands
+                   of professionals, teams, and organisations who
+                  demand reliable solutions and high performance in their digital journey!
                 </p>
               </div>
               <div className="home-7_hero-content-button">
@@ -45,7 +45,7 @@ const HeroSection = () => {
                   animation={false}
                   className="btn-masco btn-primary-l07 rounded-pill btn-shadow"
                 >
-                  Start a 10-day free trial
+                  Start your journey today
                 </Button>
               </div>
             </div>
