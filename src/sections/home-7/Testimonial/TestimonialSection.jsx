@@ -34,10 +34,10 @@ const TestimonialSection = () => {
               <div className="content">
                 <div className="content-text-block">
                   <h2 className="heading-lg heading-lg--cabin text-l7-primary">
-                    What users say about our hosting services
+                    What clients say about our services
                   </h2>
                   <p>
-                    Over the last 10 years, Masco has accumulated to many
+                    Over the last two years, DeepSLate has accumulated many
                     testimonials, reviews, and awards for better service.
                   </p>
                 </div>
