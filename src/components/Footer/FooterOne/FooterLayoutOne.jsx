@@ -86,7 +86,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 </ul>
               </div>
               <div className="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 className="footer-title">Services</h3>
+                <h3 className="footer-title">More Services</h3>
                 <ul className="footer-list">
                   <li>
                     <a href="#">Process Optimization & Innovation</a>
