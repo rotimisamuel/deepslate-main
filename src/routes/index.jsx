@@ -40,7 +40,7 @@ import FaqFourPage from "../pages/FaqFourPage";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomepageSeven />,
   },
   {
     path: "/home",
