@@ -3,7 +3,7 @@ import data from "./data";
 const ServiceSection = () => {
   const settingProps = {
     sectionHeading: {
-      title: "Technology, Education and Consulting Services",
+      title: "Technology, Education and GenAI Consultancy Services",
       column: "col-xxl-6 col-lg-7 col-md-9",
       badge: {
         text: "Our Services",

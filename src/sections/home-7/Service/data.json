@@ -1,5 +1,17 @@
 [
-  {
+   {
+    "iconSrc": "./image/home-7/feature-8.svg",
+    "title": "Digital Transformation",
+    "description": "Aligning technology adoption with organizational goals for measurable impact. ",
+    "aos": 500
+  },
+    {
+    "iconSrc": "./image/home-7/feature-7x.png",
+    "title": "Generative AI Strategy",
+    "description": " Developing and implementing AI and GenAI strategy for businesses",
+    "aos": 200
+  },
+    {
     "iconSrc": "./image/home-7/feature-1.png",
     "title": "Cloud Solutions & Infrastructure",
     "description": "Design and deployment of scalable, secure, and resilient cloud environments.",
@@ -18,12 +30,6 @@
     "aos": 600
   },
   {
-    "iconSrc": "./image/home-7/feature-8.svg",
-    "title": "Digital Transformation",
-    "description": "Aligning technology adoption with organizational goals for measurable impact. ",
-    "aos": 500
-  },
-  {
     "iconSrc": "./image/home-7/feature-6.svg",
     "title": "Process Optimization & Innovation",
     "description": "treamlining workflows and introducing innovative solutions to boost efficiency and performance.",
@@ -31,15 +37,9 @@
   },
   {
     "iconSrc": "./image/home-7/feature-7.svg",
-    "title": "Digital Skills Training",
-    "description": "Building essential digital literacy for individuals and teams.",
+    "title": "Digital and AI Skills Training",
+    "description": "Hands-on training in emerging technologies such as cloud, AI, and DevOps.",
     "aos": 300
-  },
-  {
-    "iconSrc": "./image/home-7/feature-7x.png",
-    "title": "Technology Upskilling Programs",
-    "description": " Hands-on training in emerging technologies such as cloud, AI, and DevOps.",
-    "aos": 200
   },
   {
     "iconSrc": "./image/home-7/feature-8x.png",
