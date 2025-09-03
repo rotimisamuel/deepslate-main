@@ -5,7 +5,7 @@ function BrandLogoLight({ className }) {
     <>
       <img
         className={`logo-dark${hasClassProps(className)}`}
-        src="/image/icons/logo-whites.svg"
+        src="/image/icons/logo-white.png"
         alt="brand logo"
       />
     </>
