@@ -16,7 +16,7 @@ let settingProps = {
   footer: {
     socialClass: "list-social list-social--primary-l5",
     className: "footer-padding-default footer--dark footer-l05 bg-black-3",
-    logo: "logo-white.svg",
+    logo: "logo-white.png",
   },
 };
 const HomepageFive = () => {

@@ -10,7 +10,7 @@ import Layout from "@components/Layout/PageWrapper/PageWrapper";
 let settingProps = {
   footer: {
     className: " footer-padding-default footer--dark-v1",
-    logo: "logo-white.svg",
+    logo: "logo-white.png",
   },
 };
 const ServicePage = () => {
