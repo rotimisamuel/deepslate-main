@@ -16,7 +16,7 @@ let settingProps = {
   footer: {
     socialClass: "list-social--hvr-primary-l4",
     className: "footer-padding-default footer--light footer-l04",
-    logo: "logo-4.png",
+    logo: "logo.png",
   },
 };
 
@@ -27,7 +27,7 @@ const HomepageFour = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-4.png"
+          logoUrl="/image/logo.png"
           btnAnimation={false}
           signUpButtonClass="btn-masco btn-masco btn-primary-l04 btn-shadow btn-shadow--reverse btn-shadow--reverse-center rounded-pill"
         />

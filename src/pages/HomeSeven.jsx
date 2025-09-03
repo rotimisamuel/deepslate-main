@@ -17,7 +17,7 @@ const HomepageSeven = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-6.png"
+          logoUrl="/image/logo.png"
           btnAnimation={false}
           signUpButtonClass="btn-masco btn-primary-l07 rounded-pill btn-shadow"
         />

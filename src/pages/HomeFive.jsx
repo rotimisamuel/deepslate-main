@@ -26,7 +26,7 @@ const HomepageFive = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-5.png"
+          logoUrl="/image/logo.png"
           btnAnimation={false}
           signUpButtonClass="btn-masco btn-masco btn-masco btn-masco--header btn-primary-l05"
         />

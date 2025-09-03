@@ -18,7 +18,7 @@ const HomepageTwo = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-2.png"
+          logoUrl="/image/logo.png"
           signUpButtonClass="btn-masco btn-masco--header   btn-secondary-l02 btn-fill--up"
         />
         <HeroSection />
@@ -34,7 +34,7 @@ const HomepageTwo = () => {
         <FooterLayoutTwo
           socialClass="list-social--hvr-black"
           className="footer-padding-default footer-l02"
-          logo="logo-2.png"
+          logo="logo.png"
         />{" "}
       </Layout>
     </>

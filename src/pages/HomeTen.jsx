@@ -14,7 +14,7 @@ import Layout from "@components/Layout/PageWrapper/PageWrapper";
 let settingProps = {
   footer: {
     className: "footer-padding-default footer--dark-v1 footer-l10",
-    logo: "logo-11-white.svg",
+    logo: "logo-white.png",
   },
 };
 const HomepageTen = () => {
@@ -24,7 +24,7 @@ const HomepageTen = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-9.png"
+          logoUrl="/image/logo.png"
           btnAnimation={false}
           signUpButtonClass="btn-masco btn-masco--header btn-primary-l10 rounded-pill btn-fill--slide-left"
         />

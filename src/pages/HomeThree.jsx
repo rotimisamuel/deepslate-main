@@ -16,7 +16,7 @@ const HomepageThree = () => {
       <Layout>
         <Header
           scroll={true}
-          logoUrl="/image/logo-3.png"
+          logoUrl="/image/logo.png"
           btnAnimation={false}
           signUpButtonClass="btn-masco btn-primary-l03 btn-shadow rounded-pill"
         />
@@ -31,7 +31,7 @@ const HomepageThree = () => {
         <FooterLayoutOne
           socialClass="list-social--hvr-primary-l3"
           className="padding-top-100 footer--light footer-l03"
-          logo="logo-3.png"
+          logo="logo.png"
         />{" "}
       </Layout>
     </>

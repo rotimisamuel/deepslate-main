@@ -19,10 +19,12 @@ const ContactMainSection = () => {
                     />
                   </div>
                   <div className="feature-widget-6__body">
-                    <h3 className="feature-widget-6__title">Chat with us</h3>
+                    <h3 className="feature-widget-6__title">Visit Us</h3>
                     <p>
-                      We're waiting to help you every Monday-Friday from 9 am to
-                      5 pm EST easily.
+                     3rd Floor,
+                     86-90 Paul Street, 
+                     London, 
+                     United Kingdom
                     </p>
                   </div>
                 </div>

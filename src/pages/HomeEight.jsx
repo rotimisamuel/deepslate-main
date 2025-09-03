@@ -37,7 +37,7 @@ const HomepageEight = () => {
         <FooterLayoutOne
           socialClass="list-social list-social--primary-l5"
           className="footer-padding-default footer--dark-v2 footer-l08"
-          logo="logo-10.svg"
+          logo="logo.png"
         />{" "}
       </Layout>
     </>
