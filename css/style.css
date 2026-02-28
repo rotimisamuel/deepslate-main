@@ -361,3 +361,39 @@ a.card-cta {
 a.n-link {
   text-decoration: none;
 }
+
+/* ── Bio page responsive layout ─────────────────────────────── */
+.bio-layout{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:start}
+.bio-photo{border-radius:16px;overflow:hidden;margin-bottom:24px;height:320px}
+.bio-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
+.bio-links{display:flex;flex-direction:column;gap:10px}
+.bio-links a{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--teal);text-decoration:none;font-weight:500}
+.bio-expertise{margin-top:28px;padding-top:24px;border-top:1px solid var(--grey-f)}
+.bio-expertise-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--grey-l);margin-bottom:12px}
+.bio-tags{display:flex;flex-wrap:wrap;gap:8px}
+.bio-tag{font-size:12px;padding:5px 12px;border-radius:99px;background:rgba(0,168,150,.1);color:var(--teal);font-weight:500}
+.bio-name{font-family:var(--serif);font-size:36px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.bio-role{font-size:14.5px;color:var(--grey);font-weight:600;margin-bottom:2px}
+.bio-org{font-size:14px;color:var(--teal);font-weight:600;letter-spacing:.04em;margin-bottom:32px}
+.bio-body p{font-size:16.5px;line-height:1.82;color:var(--grey);margin-bottom:20px}
+.bio-quote{border-left:4px solid var(--teal);padding:20px 28px;margin:36px 0;background:rgba(0,168,150,.05);border-radius:0 8px 8px 0}
+.bio-quote p{font-family:var(--serif);font-size:19px;font-style:italic;color:var(--dark);line-height:1.5;margin:0}
+.bio-section-title{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--dark);margin:36px 0 16px}
+.bio-list{list-style:none;margin:0;padding:0}
+.bio-list li{font-size:15.5px;line-height:1.75;color:var(--grey);padding:9px 0;border-bottom:1px solid var(--grey-f);display:flex;align-items:flex-start;gap:12px}
+.bio-list li:last-child{border-bottom:none}
+.bio-list li span{width:6px;height:6px;background:var(--teal);border-radius:50%;flex-shrink:0;margin-top:8px}
+.bio-actions{margin-top:40px;display:flex;flex-wrap:wrap;gap:14px}
+
+@media(max-width:760px){
+  .bio-layout{grid-template-columns:1fr;gap:32px}
+  .bio-photo{height:260px}
+  .bio-name{font-size:28px}
+  .bio-body p{font-size:15px}
+  .bio-quote p{font-size:16px}
+  .bio-quote{padding:16px 20px}
+}
+@media(max-width:480px){
+  .bio-photo{height:220px}
+  .bio-name{font-size:24px}
+}
