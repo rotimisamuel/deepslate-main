@@ -61,26 +61,31 @@
   <section class="sec">
     <div class="con">
       <div class="cg">
-        <form onsubmit="return false">
+        <form id="contact-form" action="https://formspree.io/f/rotimi.ogunsakin@gmail.com" method="POST">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
-            <div class="fg"><label>Name</label><input type="text" placeholder="Your full name"/></div>
-            <div class="fg"><label>Organisation</label><input type="text" placeholder="Your company or institution"/></div>
+            <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your full name" required/></div>
+            <div class="fg"><label>Organisation</label><input type="text" name="organisation" placeholder="Your company or institution"/></div>
           </div>
-          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required/></div>
           <div class="fg">
             <label>Type of enquiry</label>
-            <select>
+            <select name="enquiry_type">
               <option>Select…</option>
               <option>Services</option>
               <option>Products</option>
               <option>Programmes</option>
               <option>Case Studies / Evidence</option>
-              <option>Media & Press</option>
+              <option>Media &amp; Press</option>
               <option>Partnerships</option>
               <option>General</option>
             </select>
           </div>
-          <div class="fg"><label>Message</label><textarea rows="6" placeholder="Tell us about your situation and what you're looking for…"></textarea></div>
+          <div class="fg"><label>Message</label><textarea name="message" rows="6" placeholder="Tell us about your situation and what you're looking for…" required></textarea></div>
+          <input type="hidden" name="_subject" value="New enquiry via DeepSlate website"/>
+          <input type="hidden" name="_replyto" value=""/>
+          <div id="form-success" style="display:none;background:rgba(0,168,150,.08);border:1px solid var(--teal);border-radius:8px;padding:16px 20px;margin-bottom:16px;color:var(--teal);font-size:14.5px;font-weight:500">
+            ✓ Message sent — we'll be in touch within one business day.
+          </div>
           <button type="submit" class="btn btn-p" style="width:100%;text-align:center">Send message</button>
         </form>
         <div>
@@ -90,7 +95,7 @@
           </div>
           <div class="cdet">
             <h5>Email</h5>
-            <p><a href="/cdn-cgi/l/email-protection#d9b1bcb5b5b699bdbcbca9aab5b8adbcf7bab6f7acb2"><span class="__cf_email__" data-cfemail="1179747d7d7e5175747461627d7065743f727e3f647a">[email&#160;protected]</span></a></p>
+            <p><a href="mailto:rotimi.ogunsakin@gmail.com">rotimi.ogunsakin@gmail.com</a></p>
           </div>
           <div class="cdet">
             <h5>LinkedIn</h5>
@@ -137,6 +142,37 @@ updateNav();
 function toggleMob(){document.getElementById('mob').classList.toggle('open');}
 function closeMob(){document.getElementById('mob').classList.remove('open');}
 document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',closeMob));
+
+// Contact form — AJAX submit to Formspree
+const form = document.getElementById('contact-form');
+if(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = form.querySelector('button[type=submit]');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if(res.ok){
+        document.getElementById('form-success').style.display = 'block';
+        form.reset();
+        btn.textContent = 'Sent ✓';
+      } else {
+        btn.textContent = 'Send message';
+        btn.disabled = false;
+        alert('Something went wrong — please email us directly at rotimi.ogunsakin@gmail.com');
+      }
+    } catch(err){
+      btn.textContent = 'Send message';
+      btn.disabled = false;
+      alert('Something went wrong — please email us directly at rotimi.ogunsakin@gmail.com');
+    }
+  });
+}
 const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';io.unobserve(e.target);}});
 },{threshold:.08,rootMargin:'-40px'});
