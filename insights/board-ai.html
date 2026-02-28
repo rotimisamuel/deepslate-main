@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>The Board's AI Blind Spot — DeepSlate</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<svg id="dsMark" style="display:none">
+  <symbol id="mark" viewBox="0 0 220 220">
+    <polygon points="110,34 158.9,51.8 184.9,96.8 175.8,148 136,181.4 84,181.4 44.2,148 35.1,96.8 61.1,51.8" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <polygon points="110,44 156.7,63.3 176,110 156.7,156.7 110,176 63.3,156.7 44,110 63.3,63.3" fill="currentColor"/>
+    <polygon points="110,54 153.8,75.1 164.6,122.5 134.3,160.5 85.7,160.5 55.4,122.5 66.2,75.1" fill="var(--bg,#f0ede8)"/>
+    <polygon points="110,64 149.8,87 149.8,133 110,156 70.2,133 70.2,87" fill="currentColor"/>
+    <polygon points="110,74 144.2,98.9 131.2,139.1 88.8,139.1 75.7,98.9" fill="var(--bg,#f0ede8)"/>
+    <polygon points="110,84 136,110 110,136 84,110" fill="currentColor"/>
+    <polygon points="110,94 123.9,118 96.1,118" fill="var(--bg,#f0ede8)"/>
+  </symbol>
+</svg>
+
+<nav id="nav" data-mode="dark">
+  <div class="n-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+      <svg viewBox="0 0 220 220"><use href="#mark" class="logo-use" style="--bg:#0f1f3d"/></svg>
+      <span class="n-word">Deep<span>Slate</span></span>
+    </a>
+  </div>
+  <div class="n-links" id="nlinks">
+    <a href="../index.html" class="n-link" id="nl-home">Home</a>
+    <a href="../services.html" class="n-link" id="nl-services">Services</a>
+    <a href="../products.html" class="n-link" id="nl-products">Products</a>
+    <a href="../programmes.html" class="n-link" id="nl-programmes">Programmes</a>
+    <a href="../about.html" class="n-link" id="nl-about">About</a>
+    <a href="../insights.html" class="n-link n-active" id="nl-insights">Insights</a>
+    <a href="../cases.html" class="n-link" id="nl-cases">Case Studies</a>
+    <a href="../contact.html" class="n-cta">Contact</a>
+  </div>
+  <button class="hamburger" onclick="toggleMob()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="../index.html" class="mob-link">Home</a>
+  <a href="../services.html" class="mob-link">Services</a>
+  <a href="../products.html" class="mob-link">Products</a>
+  <a href="../programmes.html" class="mob-link">Programmes</a>
+  <a href="../about.html" class="mob-link">About</a>
+  <a href="../insights.html" class="mob-link">Insights</a>
+  <a href="../cases.html" class="mob-link">Case Studies</a>
+  <a href="../contact.html" class="mob-cta mob-link">Contact</a>
+</div>
+
+<div class="art-hero">
+    <svg class="art-hero-mark" viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#0f1f3d"/></svg>
+    <div class="con">
+      <a href="../insights.html" class="art-back">← Back to Insights</a>
+      <span class="art-cat">AI Strategy</span>
+      <h1>The board's AI blind spot: governance without understanding.</h1>
+      <div class="art-hero-meta"><span>10 January 2025</span><span>7 min read</span><span>By DeepSlate</span></div>
+    </div>
+  </div>
+  <div class="art-body">
+    <p>There is a growing expectation — from regulators, investors, and the public — that boards will govern AI responsibly. This expectation is reasonable, and in many respects overdue. AI systems are increasingly making or informing decisions that affect customers, employees, and wider society. Boards that are not engaged with how these systems work, what they are used for, and what oversight exists, are leaving a significant gap in their governance responsibilities.</p>
+    <p>The problem is that most boards are not yet equipped to meet this expectation. Not because board members are unintelligent or uninterested — they are neither — but because they have not been given the context, the frameworks, or the access to information that they would need to govern AI with genuine effectiveness.</p>
+
+    <div class="art-pull"><p>"A board cannot govern what it does not understand. And 'understanding AI' does not mean understanding the mathematics. It means understanding the risks, the decisions, and the accountability structures — well enough to challenge them."</p></div>
+
+    <h2>What boards are currently doing</h2>
+    <p>In most organisations, board-level engagement with AI takes one of two forms. Either AI appears occasionally as a standing item on the technology or audit committee agenda — typically presented by the CTO or CIO in technical terms that most board members find difficult to interrogate — or it is treated as a subset of the wider digital strategy, with no specific governance lens applied to it.</p>
+    <p>Neither approach is adequate. The first produces passive acknowledgement rather than active governance. The second treats AI as a capability question when it is also, increasingly, a risk and accountability question. What is needed is a more structured approach that gives boards the tools and the information to exercise genuine oversight.</p>
+
+    <h2>The four questions every board should be asking</h2>
+    <p>Effective AI governance at board level does not require boards to become data scientists. It requires them to ask the right questions — consistently, and with enough fluency to evaluate the answers they receive.</p>
+    <ul>
+      <li><strong>Where is AI being used in our organisation, and what decisions is it informing or making?</strong> Many boards do not have a complete inventory of AI deployments. Without this, oversight is impossible.</li>
+      <li><strong>What is our accountability structure for AI?</strong> When an AI system makes a decision that causes harm — to a customer, an employee, a member of the public — who is accountable? The answer should not be "it's complicated".</li>
+      <li><strong>How are we identifying and managing AI risks?</strong> This includes technical risks (model failure, bias, data quality) but also reputational, regulatory, and ethical risks. The board should be receiving regular, plain-language reporting on these.</li>
+      <li><strong>Are we keeping pace with the regulatory environment?</strong> AI regulation is evolving rapidly. The EU AI Act, incoming UK frameworks, and sector-specific guidance all have implications for how organisations need to govern and document their AI systems.</li>
+    </ul>
+
+    <h2>Building board capability</h2>
+    <p>The starting point for most boards is education — not technical education, but governance-focused education that helps board members understand the specific risks and accountability questions they need to engage with. This is one of the fastest-growing areas of our executive education work, and we consistently find that well-designed, practically-focused sessions produce a step-change in the quality and confidence of board-level AI conversations.</p>
+    <p>The next step is structural: putting in place the reporting, the committees, and the escalation mechanisms that give boards a regular, clear line of sight into AI governance across the organisation. This is not complex to design, but it does require the organisation's executive team to take the board's needs seriously and to invest in making AI visible at the right level of detail.</p>
+    <hr class="art-divider"/>
+    <p style="font-size:14px;color:var(--grey-l);font-style:italic">DeepSlate works with boards and executive teams on AI governance frameworks and board-level AI education. <span style="color:var(--teal);cursor:pointer" href="../products.html">See our AI Governance Framework product</span> or <span style="color:var(--teal);cursor:pointer" href="../contact.html">get in touch.</span></p>
+  </div>
+  <div class="art-related">
+    <div class="con">
+      <h4>Related insights</h4>
+      <div class="art-related-grid">
+        <a class="ins-card" href="../insights/ai-leadership.html"><div class="ins-hdr"><svg viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#0f1f3d"/></svg><span class="cat">AI Strategy</span></div><div class="ins-body"><p class="ins-meta">14 Feb 2025 · 8 min</p><h4>AI strategy is not an IT question. It's a leadership question.</h4></div></a>
+        <a class="ins-card" href="../insights/stop-buying.html"><div class="ins-hdr"><svg viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#0f1f3d"/></svg><span class="cat" style="background:var(--amber)">Opinion</span></div><div class="ins-body"><p class="ins-meta">18 Dec 2024 · 5 min</p><h4>Stop buying AI. Start thinking about AI.</h4></div></a>
+        <a class="ins-card" href="../insights/edu-fails.html"><div class="ins-hdr"><svg viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#0f1f3d"/></svg><span class="cat" style="background:var(--amber)">Education</span></div><div class="ins-body"><p class="ins-meta">3 Feb 2025 · 5 min</p><h4>Why executive AI education fails — and what to do about it.</h4></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="art-cta"><h3>Govern AI with confidence.</h3><p>We build AI governance frameworks and educate boards to use them.</p><a href="../contact.html" class="btn btn-p">Work with us</a></div>
+</div><!-- /art-board-ai -->
+
+<footer>
+  <svg class="foot-mark" viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#09101e"/></svg>
+  <div class="con">
+    <div class="fg-grid">
+      <div class="fb">
+        <div class="fl"><a href="../index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none"><svg viewBox="0 0 220 220"><use href="#mark" style="color:#f0ede8;--bg:#09101e"/></svg><span class="fl-name">Deep<span>Slate</span></span></a></div>
+        <p>Digital Transformation &middot; AI Strategy &middot; Education. Helping organisations navigate change, build AI capability, and develop their people.</p>
+      </div>
+      <div class="fc"><h6>Services</h6><a href="../services.html">Digital Transformation</a><a href="../services.html">AI Strategy</a><a href="../services.html">Education</a></div>
+      <div class="fc"><h6>Products</h6><a href="../products.html">AI Readiness Assessment</a><a href="../products.html">AI Strategy Sprint</a><a href="../products.html">Executive AI Masterclass</a><a href="../products.html">View all products</a></div>
+      <div class="fc"><h6>Company</h6><a href="../about.html">About</a><a href="../insights.html">Insights</a><a href="../cases.html">Case Studies</a><a href="../programmes.html">Programmes</a><a href="../contact.html">Contact</a></div>
+    </div>
+    <div class="fbot"><p>&copy; 2025 DeepSlate. All rights reserved.</p><div class="fsoc"><a href="#">LinkedIn</a><a href="#">X / Twitter</a><a href="mailto:hello@deepslate.co.uk">hello@deepslate.co.uk</a></div></div>
+  </div>
+</footer>
+<script>
+let isScrolled=false;
+function updateNav(){
+  const nav=document.getElementById('nav');
+  const lu=nav.querySelector('.logo-use');
+  if(isScrolled){nav.setAttribute('data-mode','light');if(lu){lu.style.color='#1a1a1a';lu.style.setProperty('--bg','#f0ede8');}}
+  else{nav.setAttribute('data-mode','dark');if(lu){lu.style.color='#f0ede8';lu.style.setProperty('--bg','#0f1f3d');}}
+}
+window.addEventListener('scroll',()=>{
+  const s=window.scrollY>60;
+  if(s!==isScrolled){isScrolled=s;document.getElementById('nav').classList.toggle('solid',s);updateNav();}
+});
+updateNav();
+function toggleMob(){document.getElementById('mob').classList.toggle('open');}
+function closeMob(){document.getElementById('mob').classList.remove('open');}
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',closeMob));
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';io.unobserve(e.target);}});
+},{threshold:.08,rootMargin:'-40px'});
+document.querySelectorAll('.card,.cs-card,.ins-card,.pillar,.team-card,.val,.stat-h').forEach((el,i)=>{
+  el.style.opacity='0';el.style.transform='translateY(22px)';
+  el.style.transition=`opacity .6s ${i*.06}s ease,transform .6s ${i*.06}s ease`;
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
