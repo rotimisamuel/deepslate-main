@@ -127,7 +127,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
       {/* Article hero */}
       <section style={{ background: '#000', color: '#fff', padding: '128px 0 64px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 60% 40%, rgba(118,185,0,0.06) 0%, transparent 60%)' }} />
+        {/* Header image */}
+        <div style={{ position: 'absolute', inset: 0 }}>
+          <img src={`/images/insight-${params.slug}.jpg`} alt="" aria-hidden style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.28, display: 'block' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.85) 100%)' }} />
+        </div>
         <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 48px', position: 'relative', zIndex: 1 }}>
           <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#000', background: '#76b900', borderRadius: 2, padding: '5px 12px', marginBottom: 22 }}>{article.cat}</span>
           <h1 style={{ margin: '0 0 20px', fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.1 }}>{article.title}</h1>

@@ -59,13 +59,11 @@ export default function TeamBioPage({ params }: { params: { slug: string } }) {
       <section style={{ background: '#000', color: '#fff', padding: '128px 0 64px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 60%, rgba(118,185,0,0.07) 0%, transparent 60%)' }} />
         <div className="bio-grid" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 64, alignItems: 'start', position: 'relative', zIndex: 1 }}>
-          {/* Avatar */}
-          <div style={{ background: '#0a0a0a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 2, padding: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 280 }}>
-            <svg viewBox="0 0 220 220" style={{ width: '70%', opacity: 0.12 }}>
-              <polygon points="110,44 156.7,63.3 176,110 156.7,156.7 110,176 63.3,156.7 44,110 63.3,63.3" fill="#76b900" />
-              <polygon points="110,64 149.8,87 149.8,133 110,156 70.2,133 70.2,87" fill="#76b900" />
-              <polygon points="110,84 136,110 110,136 84,110" fill="#76b900" />
-            </svg>
+          {/* Photo */}
+          <div style={{ background: '#0a0a0a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 2, overflow: 'hidden', minHeight: 380, position: 'relative' }}>
+            <img src={`/images/team-${params.slug}.jpg`} alt={member.name}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block', minHeight: 380 }}
+              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }} />
           </div>
 
           {/* Name/role */}

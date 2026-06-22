@@ -154,6 +154,9 @@ export default function Hero() {
         position: 'relative',
         minHeight: '100vh',
         background: '#060606',
+        backgroundImage: 'url(/images/hero-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         display: 'flex',
         flexDirection: 'column',
         overflow: 'hidden',
@@ -167,7 +170,7 @@ export default function Hero() {
           position: 'absolute',
           inset: 0,
           background:
-            'linear-gradient(105deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.72) 42%, rgba(0,0,0,0.35) 100%)',
+            'linear-gradient(105deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 42%, rgba(0,0,0,0.5) 100%)',
           zIndex: 1,
           pointerEvents: 'none',
         }}

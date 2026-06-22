@@ -7,9 +7,9 @@ import PageHero from '@/components/PageHero'
 import { gsap, useGSAP } from '@/lib/gsap'
 
 const TEAM = [
-  { href: '/team/founder', name: 'Rotimi Ogunsakin, PhD', role: 'Founder & Managing Director', focus: 'Digital Transformation · AI Strategy', bio: 'Academic, practitioner, and strategic advisor with deep experience in digital transformation and AI strategy across public and private sectors.' },
-  { href: '/team/ai', name: 'Gold Samuels', role: 'AI Strategy Lead', focus: 'AI Governance · Data Strategy', bio: 'Specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.' },
-  { href: '/team/education', name: 'Laud Ochei Charles, PhD', role: 'Head of Education', focus: 'Executive Learning · Programme Design', bio: 'Expert in executive education with a track record of designing and delivering high-impact leadership programmes for senior audiences.' },
+  { href: '/team/founder', img: '/images/team-founder.jpg', name: 'Rotimi Ogunsakin, PhD', role: 'Founder & Managing Director', focus: 'Digital Transformation · AI Strategy', bio: 'Academic, practitioner, and strategic advisor with deep experience in digital transformation and AI strategy across public and private sectors.' },
+  { href: '/team/ai', img: '/images/team-ai.jpg', name: 'Gold Samuels', role: 'AI Strategy Lead', focus: 'AI Governance · Data Strategy', bio: 'Specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.' },
+  { href: '/team/education', img: '/images/team-education.jpg', name: 'Laud Ochei Charles, PhD', role: 'Head of Education', focus: 'Executive Learning · Programme Design', bio: 'Expert in executive education with a track record of designing and delivering high-impact leadership programmes for senior audiences.' },
 ]
 
 const VALUES = [
@@ -86,14 +86,11 @@ export default function AboutPage() {
               <Link key={m.href} href={m.href} className="team-card" style={{ textDecoration: 'none', border: '1px solid #e8e8e8', borderRadius: 2, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.2s, box-shadow 0.2s' }}
                 onMouseEnter={(e) => { const el = e.currentTarget; el.style.borderColor = '#76b900'; el.style.boxShadow = '0 12px 32px rgba(0,0,0,0.09)' }}
                 onMouseLeave={(e) => { const el = e.currentTarget; el.style.borderColor = '#e8e8e8'; el.style.boxShadow = 'none' }}>
-                {/* Avatar placeholder */}
-                <div style={{ height: 300, background: '#060606', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 60%, rgba(118,185,0,0.08) 0%, transparent 65%)' }} />
-                  <svg viewBox="0 0 220 220" style={{ width: 80, opacity: 0.12, position: 'relative', zIndex: 1 }}>
-                    <polygon points="110,44 156.7,63.3 176,110 156.7,156.7 110,176 63.3,156.7 44,110 63.3,63.3" fill="#76b900" />
-                    <polygon points="110,64 149.8,87 149.8,133 110,156 70.2,133 70.2,87" fill="#76b900" />
-                    <polygon points="110,84 136,110 110,136 84,110" fill="#76b900" />
-                  </svg>
+                {/* Team photo */}
+                <div style={{ height: 300, background: '#060606', overflow: 'hidden', position: 'relative' }}>
+                  <img src={m.img} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
+                    onError={(e) => { const el = e.currentTarget; el.style.display = 'none'; (el.parentElement as HTMLElement).style.background = '#060606' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3) 100%)', pointerEvents: 'none' }} />
                 </div>
                 <div style={{ padding: 26 }}>
                   <h4 style={{ margin: '0 0 4px', fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 19, color: '#000' }}>{m.name}</h4>

@@ -42,11 +42,10 @@ export default function InsightsPage() {
             <Link key={a.slug} href={`/insights/${a.slug}`} className="insight-card-inner" style={{ textDecoration: 'none', border: '1px solid #e8e8e8', borderRadius: 2, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'transform 0.2s, box-shadow 0.2s, border-color 0.2s' }}
               onMouseEnter={(e) => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 16px 40px rgba(0,0,0,0.09)'; el.style.borderColor = '#76b900' }}
               onMouseLeave={(e) => { const el = e.currentTarget; el.style.transform = 'none'; el.style.boxShadow = 'none'; el.style.borderColor = '#e8e8e8' }}>
-              <div style={{ height: 150, background: '#060606', display: 'flex', alignItems: 'flex-end', padding: 18, position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 50%, rgba(118,185,0,0.07) 0%, transparent 70%)' }} />
-                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 56, color: 'rgba(118,185,0,0.1)', letterSpacing: '-0.04em' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </div>
+              <div style={{ height: 180, background: '#060606', display: 'flex', alignItems: 'flex-end', padding: 18, position: 'relative', overflow: 'hidden' }}>
+                <img src={`/images/insight-${a.slug}.jpg`} alt="" aria-hidden
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.35 }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 70%)' }} />
                 <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#000', background: '#76b900', borderRadius: 2, padding: '5px 10px', position: 'relative', zIndex: 1 }}>{a.cat}</span>
               </div>
               <div style={{ padding: 26, display: 'flex', flexDirection: 'column', flex: 1 }}>
