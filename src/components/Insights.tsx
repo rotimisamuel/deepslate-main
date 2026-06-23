@@ -36,6 +36,70 @@ const ARTICLES = [
   },
 ]
 
+function CardVisual({ index }: { index: number }) {
+  if (index === 0) {
+    // AI Strategy: leadership hierarchy above a neural network
+    return (
+      <svg viewBox="0 0 200 130" style={{ width: '74%', display: 'block', margin: '0 auto', overflow: 'visible' }}>
+        {/* Leadership apex */}
+        <polygon points="100,14 66,56 134,56" fill="none" stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.45} />
+        <circle cx="100" cy="14" r="6.5" fill="#76b900" />
+        <circle cx="66" cy="56" r="4.5" fill="#76b900" fillOpacity={0.7} />
+        <circle cx="134" cy="56" r="4.5" fill="#76b900" fillOpacity={0.7} />
+        {/* Bridge to network */}
+        <line x1="100" y1="56" x2="100" y2="70" stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.35} strokeDasharray="2 2" />
+        {/* Neural network */}
+        <circle cx="65" cy="88" r="4" fill="#76b900" fillOpacity={0.5} />
+        <circle cx="100" cy="78" r="6" fill="#76b900" fillOpacity={0.65} />
+        <circle cx="135" cy="88" r="4" fill="#76b900" fillOpacity={0.5} />
+        <circle cx="48" cy="112" r="3" fill="#76b900" fillOpacity={0.3} />
+        <circle cx="82" cy="110" r="3" fill="#76b900" fillOpacity={0.3} />
+        <circle cx="118" cy="110" r="3" fill="#76b900" fillOpacity={0.3} />
+        <circle cx="152" cy="112" r="3" fill="#76b900" fillOpacity={0.3} />
+        <line x1="65" y1="88" x2="100" y2="78" stroke="#76b900" strokeWidth="0.9" strokeOpacity={0.3} />
+        <line x1="135" y1="88" x2="100" y2="78" stroke="#76b900" strokeWidth="0.9" strokeOpacity={0.3} />
+        <line x1="48" y1="112" x2="65" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+        <line x1="82" y1="110" x2="65" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+        <line x1="82" y1="110" x2="100" y2="78" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+        <line x1="118" y1="110" x2="100" y2="78" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+        <line x1="118" y1="110" x2="135" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+        <line x1="152" y1="112" x2="135" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+      </svg>
+    )
+  }
+  if (index === 1) {
+    // Education: ascending bars that fade and then stop — knowledge that doesn't stick
+    return (
+      <svg viewBox="0 0 200 130" style={{ width: '68%', display: 'block', margin: '0 auto' }}>
+        <rect x="18" y="94" width="28" height="30" rx="1" fill="#76b900" fillOpacity={0.75} />
+        <rect x="52" y="74" width="28" height="50" rx="1" fill="#76b900" fillOpacity={0.58} />
+        <rect x="86" y="54" width="28" height="70" rx="1" fill="#76b900" fillOpacity={0.38} />
+        <rect x="120" y="34" width="28" height="90" rx="1" fill="#76b900" fillOpacity={0.2} />
+        {/* Gap then empty step */}
+        <line x1="148" y1="24" x2="160" y2="16" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.2} strokeDasharray="2 3" strokeLinecap="round" />
+        <rect x="158" y="14" width="28" height="110" rx="1" fill="none" stroke="#76b900" strokeWidth="1" strokeOpacity={0.12} strokeDasharray="3 3" />
+      </svg>
+    )
+  }
+  // index === 2: Transformation — polished slides, broken arrow, empty execution
+  return (
+    <svg viewBox="0 0 200 130" style={{ width: '74%', display: 'block', margin: '0 auto' }}>
+      {/* Slide deck */}
+      <rect x="10" y="28" width="78" height="54" rx="2" fill="#76b900" fillOpacity={0.07} stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.5} />
+      <line x1="22" y1="43" x2="78" y2="43" stroke="#76b900" strokeWidth="2" strokeOpacity={0.65} strokeLinecap="round" />
+      <line x1="22" y1="54" x2="70" y2="54" stroke="#76b900" strokeWidth="1" strokeOpacity={0.4} strokeLinecap="round" />
+      <line x1="22" y1="63" x2="74" y2="63" stroke="#76b900" strokeWidth="1" strokeOpacity={0.4} strokeLinecap="round" />
+      <line x1="22" y1="72" x2="62" y2="72" stroke="#76b900" strokeWidth="1" strokeOpacity={0.3} strokeLinecap="round" />
+      {/* Broken arrow */}
+      <line x1="96" y1="55" x2="108" y2="55" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.45} strokeLinecap="round" strokeDasharray="3 2" />
+      <polyline points="105,50 111,55 105,60" fill="none" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.45} strokeLinecap="round" strokeLinejoin="round" />
+      {/* Empty execution box */}
+      <rect x="118" y="28" width="72" height="54" rx="2" fill="none" stroke="#76b900" strokeWidth="1" strokeOpacity={0.16} strokeDasharray="5 4" />
+      <text x="154" y="61" textAnchor="middle" fill="#76b900" fillOpacity={0.18} fontSize="22" fontFamily="Inter,sans-serif" fontWeight="700">?</text>
+    </svg>
+  )
+}
+
 function InsightCard({ article, index }: { article: typeof ARTICLES[0]; index: number }) {
   return (
     <article
@@ -74,30 +138,9 @@ function InsightCard({ article, index }: { article: typeof ARTICLES[0]; index: n
           justifyContent: 'center',
         }}
       >
-        {/* Grid */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage:
-              'linear-gradient(rgba(118,185,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(118,185,0,0.06) 1px, transparent 1px)',
-            backgroundSize: '32px 32px',
-          }}
-        />
-        {/* Article number */}
-        <div
-          style={{
-            position: 'relative',
-            zIndex: 1,
-            fontFamily: 'Inter, sans-serif',
-            fontWeight: 700,
-            fontSize: 64,
-            lineHeight: 1,
-            color: 'rgba(118,185,0,0.15)',
-            letterSpacing: '-0.04em',
-          }}
-        >
-          {String(index + 1).padStart(2, '0')}
+        {/* Illustration */}
+        <div style={{ position: 'relative', zIndex: 1, width: '100%' }}>
+          <CardVisual index={index} />
         </div>
         {/* Category badge */}
         <div
