@@ -69,7 +69,7 @@ export default function Navbar() {
           }}
         >
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-            <DeepSlateLogo size={28} />
+            <DeepSlateLogo size={32} />
             <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 20, letterSpacing: '-0.01em', color: '#fff' }}>
               DeepSlate
             </span>
