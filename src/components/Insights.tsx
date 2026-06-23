@@ -11,6 +11,7 @@ const ARTICLES = [
     readTime: '8 min',
     title: 'AI strategy is not an IT question. It\'s a leadership question.',
     excerpt: 'The organisations that succeed treat AI as a leadership challenge first — and a technology challenge second.',
+    bg: 'linear-gradient(135deg, #050a00 0%, #0d1400 100%)',
   },
   {
     slug: 'edu-fails',
@@ -19,6 +20,7 @@ const ARTICLES = [
     readTime: '5 min',
     title: 'Why executive AI education fails — and what to do about it.',
     excerpt: 'Too much AI training talks about the technology. Not enough trains leaders on the decisions they\'ll face.',
+    bg: 'linear-gradient(135deg, #060606 0%, #111 100%)',
   },
   {
     slug: 'slide-deck',
@@ -27,6 +29,7 @@ const ARTICLES = [
     readTime: '6 min',
     title: 'Digital transformation fails when strategy stops at the slide deck.',
     excerpt: 'Execution is where transformation lives or dies. Here\'s how to close the gap between ambition and action.',
+    bg: 'linear-gradient(135deg, #040404 0%, #0a0a0a 100%)',
   },
 ]
 
@@ -56,8 +59,8 @@ function InsightCard({ article }: { article: typeof ARTICLES[0] }) {
         el.style.borderColor = '#e8e8e8'
       }}
     >
-      {/* Black header with category badge */}
-      <div style={{ height: 160, background: '#000', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '0 20px 18px' }}>
+      {/* Header */}
+      <div style={{ height: 160, background: article.bg, position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '0 20px 18px' }}>
         <div style={{
           fontSize: 10,
           fontWeight: 700,
