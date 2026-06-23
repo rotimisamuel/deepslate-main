@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 960">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#76b900" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#76b900" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="768" height="960" fill="url(#bg)"/>
+  <rect width="768" height="960" fill="url(#glow)"/>
+  <!-- Subtle octagon watermark -->
+  <polygon points="384,180 494,227 541,337 494,447 384,494 274,447 227,337 274,227"
+    fill="none" stroke="#76b900" stroke-opacity="0.07" stroke-width="1.5"/>
+  <!-- Person silhouette -->
+  <ellipse cx="384" cy="330" rx="88" ry="88" fill="#1c1c1c"/>
+  <ellipse cx="384" cy="330" rx="86" ry="86" fill="#222"/>
+  <!-- Head -->
+  <ellipse cx="384" cy="318" rx="54" ry="60" fill="#2a2a2a"/>
+  <!-- Neck and shoulders -->
+  <path d="M330 400 Q332 430 290 470 L240 960 H528 L478 470 Q436 430 438 400 Q410 430 384 432 Q358 430 330 400Z" fill="#1e1e1e"/>
+  <!-- Collar detail -->
+  <path d="M348 420 L384 450 L420 420" fill="none" stroke="#76b900" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Green accent line at bottom -->
+  <rect x="0" y="940" width="768" height="4" fill="#76b900" opacity="0.6"/>
+</svg>

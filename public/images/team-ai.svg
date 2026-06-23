@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 960">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#191a18"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#76b900" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#76b900" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="768" height="960" fill="url(#bg)"/>
+  <rect width="768" height="960" fill="url(#glow)"/>
+  <polygon points="384,200 474,237 511,327 474,417 384,454 294,417 257,327 294,237"
+    fill="none" stroke="#76b900" stroke-opacity="0.06" stroke-width="1.5"/>
+  <!-- Head -->
+  <ellipse cx="384" cy="310" rx="62" ry="68" fill="#252525"/>
+  <!-- Hair suggestion -->
+  <ellipse cx="384" cy="268" rx="62" ry="28" fill="#1a1a1a"/>
+  <!-- Neck and shoulders (wider/rounder for female) -->
+  <path d="M326 390 Q328 418 278 458 L228 960 H540 L490 458 Q440 418 442 390 Q414 422 384 424 Q354 422 326 390Z" fill="#1e1e1e"/>
+  <!-- Collar -->
+  <path d="M352 408 L384 434 L416 408" fill="none" stroke="#76b900" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="0" y="940" width="768" height="4" fill="#76b900" opacity="0.5"/>
+</svg>
