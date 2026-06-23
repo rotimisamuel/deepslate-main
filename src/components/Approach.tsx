@@ -4,6 +4,7 @@ import { gsap, useGSAP } from '@/lib/gsap'
 
 function ApproachVisual({ active, triggerRef }: { active: number; triggerRef: React.RefObject<HTMLElement> }) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const glowRef = useRef<HTMLDivElement>(null)
   const r1 = useRef<SVGPolygonElement>(null)
   const r2 = useRef<SVGPolygonElement>(null)
   const r3 = useRef<SVGPolygonElement>(null)
@@ -11,7 +12,6 @@ function ApproachVisual({ active, triggerRef }: { active: number; triggerRef: Re
   const r5 = useRef<SVGPolygonElement>(null)
   const r6 = useRef<SVGPolygonElement>(null)
 
-  // One-shot inside-out reveal triggered when the section enters the viewport
   useGSAP(() => {
     const origin = '110 110'
     const order = [r6, r5, r4, r3, r2, r1] // innermost → outermost
@@ -20,27 +20,48 @@ function ApproachVisual({ active, triggerRef }: { active: number; triggerRef: Re
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: triggerRef.current,  // fires on the whole section
-        start: 'top center',          // when section top hits viewport center
+        trigger: triggerRef.current,
+        start: 'top center',
         once: true,
+      },
+      onComplete: () => {
+        // Continuous counter-rotating rings after reveal
+        const speeds = [22, 16, 11, 8, 5, 3]
+        ;[r1, r2, r3, r4, r5, r6].forEach((ring, i) => {
+          const dir = i % 2 === 0 ? '+=360' : '-=360'
+          gsap.to(ring.current, {
+            rotation: dir,
+            svgOrigin: origin,
+            duration: speeds[i],
+            repeat: -1,
+            ease: 'none',
+          })
+        })
+        // Breathing glow
+        gsap.to(glowRef.current, {
+          opacity: 0.7,
+          scale: 1.15,
+          duration: 2.2,
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+        })
       },
     })
 
     order.forEach((ring, i) => {
       tl.to(
         ring.current,
-        { opacity: 1, scale: 1, duration: 0.65, ease: 'back.out(1.4)', svgOrigin: origin },
-        i * 0.72
+        { opacity: 1, scale: 1, duration: 0.55, ease: 'back.out(1.6)', svgOrigin: origin },
+        i * 0.6
       )
     })
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} style={{ width: '100%', aspectRatio: '4 / 3', background: 'linear-gradient(135deg, #0d0d0d 0%, #111 50%, #0a0a0a 100%)', border: '1px solid #1e1e1e', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      {/* Grid */}
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(118,185,0,0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(118,185,0,0.055) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-      {/* Static glow */}
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 52% 52% at 50% 50%, rgba(118,185,0,0.13) 0%, transparent 70%)', pointerEvents: 'none' }} />
+    <div ref={containerRef} style={{ width: '100%', aspectRatio: '4 / 3', background: '#060606', border: '1px solid #1e1e1e', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      {/* Pulsing glow — no grid */}
+      <div ref={glowRef} style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(118,185,0,0.22) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
       {/* Logo — rendered innermost on top so stacking is correct */}
       <svg viewBox="0 0 220 220" style={{ width: '62%', position: 'relative', zIndex: 1, overflow: 'visible' }}>
