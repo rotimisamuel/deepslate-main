@@ -58,14 +58,7 @@ export default function TeamBioPage({ params }: { params: { slug: string } }) {
       {/* Bio hero */}
       <section style={{ background: '#000', color: '#fff', padding: '128px 0 64px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 60%, rgba(118,185,0,0.07) 0%, transparent 60%)' }} />
-        <div className="bio-grid" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 64, alignItems: 'start', position: 'relative', zIndex: 1 }}>
-          {/* Photo */}
-          <div style={{ background: '#0a0a0a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 2, overflow: 'hidden', minHeight: 380, position: 'relative' }}>
-            <img src={`/images/team-${params.slug}.jpg`} alt={member.name}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block', minHeight: 380 }}
-              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }} />
-          </div>
-
+        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', position: 'relative', zIndex: 1 }}>
           {/* Name/role */}
           <div>
             {member.focus.map((f) => (
