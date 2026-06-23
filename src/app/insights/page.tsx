@@ -7,12 +7,12 @@ import PageHero from '@/components/PageHero'
 import { gsap, useGSAP } from '@/lib/gsap'
 
 const ARTICLES = [
-  { slug: 'ai-leadership', cat: 'AI Strategy', meta: '14 Feb 2025 · 8 min read', title: "AI strategy is not an IT question. It's a leadership question.", excerpt: 'Most organisations approach AI as a technology deployment problem. The ones that succeed treat it as a leadership challenge first — and a technology challenge second.' },
-  { slug: 'edu-fails', cat: 'Education', meta: '3 Feb 2025 · 5 min read', title: 'Why executive AI education fails — and what to do about it.', excerpt: "Too much AI training talks about the technology. Not enough trains leaders on the decisions they'll actually face." },
-  { slug: 'slide-deck', cat: 'Digital Transformation', meta: '22 Jan 2025 · 6 min read', title: 'Digital transformation fails when strategy stops at the slide deck.', excerpt: "Execution is where transformation lives or dies. Here's how to close the gap between ambition and action." },
-  { slug: 'board-ai', cat: 'AI Strategy', meta: '10 Jan 2025 · 7 min read', title: "The board's AI blind spot: governance without understanding.", excerpt: "Boards are increasingly being asked to govern AI. Most aren't yet equipped to do so. Here's what good AI governance actually looks like." },
-  { slug: 'culture', cat: 'Digital Transformation', meta: '5 Jan 2025 · 4 min read', title: 'The quiet failure of digital transformation: why culture beats technology every time.', excerpt: 'The hardest part of transformation was never the tech. It was always the people — and that matters more than ever.' },
-  { slug: 'stop-buying', cat: 'Opinion', meta: '18 Dec 2024 · 5 min read', title: 'Stop buying AI. Start thinking about AI.', excerpt: 'The rush to adopt AI tools is producing a new kind of organisational debt. Slow down, think strategically, then move with purpose.' },
+  { slug: 'ai-leadership', cat: 'AI Strategy', meta: '14 Feb 2025 · 8 min read', bg: 'linear-gradient(135deg, #050a00 0%, #0d1400 100%)', title: "AI strategy is not an IT question. It's a leadership question.", excerpt: 'Most organisations approach AI as a technology deployment problem. The ones that succeed treat it as a leadership challenge first — and a technology challenge second.' },
+  { slug: 'edu-fails', cat: 'Education', meta: '3 Feb 2025 · 5 min read', bg: 'linear-gradient(135deg, #060606 0%, #111 100%)', title: 'Why executive AI education fails — and what to do about it.', excerpt: "Too much AI training talks about the technology. Not enough trains leaders on the decisions they'll actually face." },
+  { slug: 'slide-deck', cat: 'Digital Transformation', meta: '22 Jan 2025 · 6 min read', bg: 'linear-gradient(135deg, #040404 0%, #0a0a0a 100%)', title: 'Digital transformation fails when strategy stops at the slide deck.', excerpt: "Execution is where transformation lives or dies. Here's how to close the gap between ambition and action." },
+  { slug: 'board-ai', cat: 'AI Strategy', meta: '10 Jan 2025 · 7 min read', bg: 'linear-gradient(135deg, #050a00 0%, #0d1400 100%)', title: "The board's AI blind spot: governance without understanding.", excerpt: "Boards are increasingly being asked to govern AI. Most aren't yet equipped to do so. Here's what good AI governance actually looks like." },
+  { slug: 'culture', cat: 'Digital Transformation', meta: '5 Jan 2025 · 4 min read', bg: 'linear-gradient(135deg, #040404 0%, #0a0a0a 100%)', title: 'The quiet failure of digital transformation: why culture beats technology every time.', excerpt: 'The hardest part of transformation was never the tech. It was always the people — and that matters more than ever.' },
+  { slug: 'stop-buying', cat: 'Opinion', meta: '18 Dec 2024 · 5 min read', bg: 'linear-gradient(135deg, #060606 0%, #0f0f0f 100%)', title: 'Stop buying AI. Start thinking about AI.', excerpt: 'The rush to adopt AI tools is producing a new kind of organisational debt. Slow down, think strategically, then move with purpose.' },
 ]
 
 export default function InsightsPage() {
@@ -42,11 +42,8 @@ export default function InsightsPage() {
             <Link key={a.slug} href={`/insights/${a.slug}`} className="insight-card-inner" style={{ textDecoration: 'none', border: '1px solid #e8e8e8', borderRadius: 2, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'transform 0.2s, box-shadow 0.2s, border-color 0.2s' }}
               onMouseEnter={(e) => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 16px 40px rgba(0,0,0,0.09)'; el.style.borderColor = '#76b900' }}
               onMouseLeave={(e) => { const el = e.currentTarget; el.style.transform = 'none'; el.style.boxShadow = 'none'; el.style.borderColor = '#e8e8e8' }}>
-              <div style={{ height: 180, background: '#060606', display: 'flex', alignItems: 'flex-end', padding: 18, position: 'relative', overflow: 'hidden' }}>
-                <img src={`/images/insight-${a.slug}.jpg`} alt="" aria-hidden
-                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.35 }} />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 70%)' }} />
-                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#000', background: '#76b900', borderRadius: 2, padding: '5px 10px', position: 'relative', zIndex: 1 }}>{a.cat}</span>
+              <div style={{ height: 160, background: a.bg, display: 'flex', alignItems: 'flex-end', padding: '0 18px 18px' }}>
+                <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#000', background: '#76b900', borderRadius: 2, padding: '4px 10px' }}>{a.cat}</span>
               </div>
               <div style={{ padding: 26, display: 'flex', flexDirection: 'column', flex: 1 }}>
                 <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#898989' }}>{a.meta}</p>
