@@ -12,7 +12,7 @@ const ARTICLES = [
     excerpt:
       'The organisations that succeed treat AI as a leadership challenge first — and a technology challenge second.',
     accent: '#76b900',
-    bg: 'linear-gradient(135deg, #050a00 0%, #0d1400 100%)',
+    bg: 'linear-gradient(135deg, #0d1a00 0%, #1a2e00 100%)',
   },
   {
     category: 'Education',
@@ -22,7 +22,7 @@ const ARTICLES = [
     excerpt:
       'Too much AI training talks about the technology. Not enough trains leaders on the decisions they\'ll face.',
     accent: '#76b900',
-    bg: 'linear-gradient(135deg, #060606 0%, #111 100%)',
+    bg: 'linear-gradient(135deg, #0a1400 0%, #162000 100%)',
   },
   {
     category: 'Transformation',
@@ -32,70 +32,71 @@ const ARTICLES = [
     excerpt:
       'Execution is where transformation lives or dies. Here\'s how to close the gap between ambition and action.',
     accent: '#76b900',
-    bg: 'linear-gradient(135deg, #040404 0%, #0a0a0a 100%)',
+    bg: 'linear-gradient(135deg, #0d1a00 0%, #142200 100%)',
   },
 ]
 
+const G = '#76b900'
+
 function CardVisual({ index }: { index: number }) {
   if (index === 0) {
-    // AI Strategy: leadership hierarchy above a neural network
     return (
-      <svg viewBox="0 0 200 130" style={{ width: '74%', display: 'block', margin: '0 auto', overflow: 'visible' }}>
-        {/* Leadership apex */}
-        <polygon points="100,14 66,56 134,56" fill="none" stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.45} />
-        <circle cx="100" cy="14" r="6.5" fill="#76b900" />
-        <circle cx="66" cy="56" r="4.5" fill="#76b900" fillOpacity={0.7} />
-        <circle cx="134" cy="56" r="4.5" fill="#76b900" fillOpacity={0.7} />
-        {/* Bridge to network */}
-        <line x1="100" y1="56" x2="100" y2="70" stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.35} strokeDasharray="2 2" />
-        {/* Neural network */}
-        <circle cx="65" cy="88" r="4" fill="#76b900" fillOpacity={0.5} />
-        <circle cx="100" cy="78" r="6" fill="#76b900" fillOpacity={0.65} />
-        <circle cx="135" cy="88" r="4" fill="#76b900" fillOpacity={0.5} />
-        <circle cx="48" cy="112" r="3" fill="#76b900" fillOpacity={0.3} />
-        <circle cx="82" cy="110" r="3" fill="#76b900" fillOpacity={0.3} />
-        <circle cx="118" cy="110" r="3" fill="#76b900" fillOpacity={0.3} />
-        <circle cx="152" cy="112" r="3" fill="#76b900" fillOpacity={0.3} />
-        <line x1="65" y1="88" x2="100" y2="78" stroke="#76b900" strokeWidth="0.9" strokeOpacity={0.3} />
-        <line x1="135" y1="88" x2="100" y2="78" stroke="#76b900" strokeWidth="0.9" strokeOpacity={0.3} />
-        <line x1="48" y1="112" x2="65" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
-        <line x1="82" y1="110" x2="65" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
-        <line x1="82" y1="110" x2="100" y2="78" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
-        <line x1="118" y1="110" x2="100" y2="78" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
-        <line x1="118" y1="110" x2="135" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
-        <line x1="152" y1="112" x2="135" y2="88" stroke="#76b900" strokeWidth="0.7" strokeOpacity={0.2} />
+      <svg viewBox="0 0 200 130" width="160" height="104" style={{ display: 'block', margin: '0 auto' }}>
+        {/* Leadership triangle */}
+        <line x1="100" y1="16" x2="62" y2="56" stroke={G} strokeWidth="1.5" opacity="0.6" />
+        <line x1="100" y1="16" x2="138" y2="56" stroke={G} strokeWidth="1.5" opacity="0.6" />
+        <line x1="62" y1="56" x2="138" y2="56" stroke={G} strokeWidth="1.5" opacity="0.6" />
+        <circle cx="100" cy="16" r="7" fill={G} />
+        <circle cx="62" cy="56" r="5" fill={G} opacity="0.75" />
+        <circle cx="138" cy="56" r="5" fill={G} opacity="0.75" />
+        {/* Connector */}
+        <line x1="100" y1="56" x2="100" y2="70" stroke={G} strokeWidth="1.5" strokeDasharray="3 2" opacity="0.5" />
+        {/* Neural net */}
+        <line x1="65" y1="88" x2="100" y2="76" stroke={G} strokeWidth="1" opacity="0.45" />
+        <line x1="135" y1="88" x2="100" y2="76" stroke={G} strokeWidth="1" opacity="0.45" />
+        <line x1="50" y1="112" x2="65" y2="88" stroke={G} strokeWidth="1" opacity="0.3" />
+        <line x1="82" y1="110" x2="65" y2="88" stroke={G} strokeWidth="1" opacity="0.3" />
+        <line x1="82" y1="110" x2="100" y2="76" stroke={G} strokeWidth="1" opacity="0.3" />
+        <line x1="118" y1="110" x2="100" y2="76" stroke={G} strokeWidth="1" opacity="0.3" />
+        <line x1="118" y1="110" x2="135" y2="88" stroke={G} strokeWidth="1" opacity="0.3" />
+        <line x1="150" y1="112" x2="135" y2="88" stroke={G} strokeWidth="1" opacity="0.3" />
+        <circle cx="65" cy="88" r="4.5" fill={G} opacity="0.7" />
+        <circle cx="100" cy="76" r="6.5" fill={G} />
+        <circle cx="135" cy="88" r="4.5" fill={G} opacity="0.7" />
+        <circle cx="50" cy="112" r="3.5" fill={G} opacity="0.45" />
+        <circle cx="82" cy="110" r="3.5" fill={G} opacity="0.45" />
+        <circle cx="118" cy="110" r="3.5" fill={G} opacity="0.45" />
+        <circle cx="150" cy="112" r="3.5" fill={G} opacity="0.45" />
       </svg>
     )
   }
   if (index === 1) {
-    // Education: ascending bars that fade and then stop — knowledge that doesn't stick
     return (
-      <svg viewBox="0 0 200 130" style={{ width: '68%', display: 'block', margin: '0 auto' }}>
-        <rect x="18" y="94" width="28" height="30" rx="1" fill="#76b900" fillOpacity={0.75} />
-        <rect x="52" y="74" width="28" height="50" rx="1" fill="#76b900" fillOpacity={0.58} />
-        <rect x="86" y="54" width="28" height="70" rx="1" fill="#76b900" fillOpacity={0.38} />
-        <rect x="120" y="34" width="28" height="90" rx="1" fill="#76b900" fillOpacity={0.2} />
-        {/* Gap then empty step */}
-        <line x1="148" y1="24" x2="160" y2="16" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.2} strokeDasharray="2 3" strokeLinecap="round" />
-        <rect x="158" y="14" width="28" height="110" rx="1" fill="none" stroke="#76b900" strokeWidth="1" strokeOpacity={0.12} strokeDasharray="3 3" />
+      <svg viewBox="0 0 200 120" width="160" height="96" style={{ display: 'block', margin: '0 auto' }}>
+        {/* Ascending bars — solid, fading toward top */}
+        <rect x="14" y="80" width="32" height="36" rx="1" fill={G} opacity="1" />
+        <rect x="54" y="60" width="32" height="56" rx="1" fill={G} opacity="0.75" />
+        <rect x="94" y="40" width="32" height="76" rx="1" fill={G} opacity="0.5" />
+        <rect x="134" y="20" width="32" height="96" rx="1" fill={G} opacity="0.25" />
+        {/* Broken step */}
+        <line x1="166" y1="10" x2="180" y2="0" stroke={G} strokeWidth="2" strokeDasharray="3 3" opacity="0.35" strokeLinecap="round" />
       </svg>
     )
   }
-  // index === 2: Transformation — polished slides, broken arrow, empty execution
   return (
-    <svg viewBox="0 0 200 130" style={{ width: '74%', display: 'block', margin: '0 auto' }}>
-      {/* Slide deck */}
-      <rect x="10" y="28" width="78" height="54" rx="2" fill="#76b900" fillOpacity={0.07} stroke="#76b900" strokeWidth="1.2" strokeOpacity={0.5} />
-      <line x1="22" y1="43" x2="78" y2="43" stroke="#76b900" strokeWidth="2" strokeOpacity={0.65} strokeLinecap="round" />
-      <line x1="22" y1="54" x2="70" y2="54" stroke="#76b900" strokeWidth="1" strokeOpacity={0.4} strokeLinecap="round" />
-      <line x1="22" y1="63" x2="74" y2="63" stroke="#76b900" strokeWidth="1" strokeOpacity={0.4} strokeLinecap="round" />
-      <line x1="22" y1="72" x2="62" y2="72" stroke="#76b900" strokeWidth="1" strokeOpacity={0.3} strokeLinecap="round" />
+    <svg viewBox="0 0 220 120" width="176" height="96" style={{ display: 'block', margin: '0 auto' }}>
+      {/* Slide */}
+      <rect x="8" y="20" width="84" height="58" rx="2" fill={G} opacity="0.12" stroke={G} strokeWidth="1.5" />
+      <line x1="20" y1="36" x2="82" y2="36" stroke={G} strokeWidth="2.5" strokeLinecap="round" opacity="0.9" />
+      <line x1="20" y1="48" x2="74" y2="48" stroke={G} strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+      <line x1="20" y1="58" x2="78" y2="58" stroke={G} strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+      <line x1="20" y1="68" x2="66" y2="68" stroke={G} strokeWidth="1.5" strokeLinecap="round" opacity="0.5" />
       {/* Broken arrow */}
-      <line x1="96" y1="55" x2="108" y2="55" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.45} strokeLinecap="round" strokeDasharray="3 2" />
-      <polyline points="105,50 111,55 105,60" fill="none" stroke="#76b900" strokeWidth="1.5" strokeOpacity={0.45} strokeLinecap="round" strokeLinejoin="round" />
-      {/* Empty execution box */}
-      <rect x="118" y="28" width="72" height="54" rx="2" fill="none" stroke="#76b900" strokeWidth="1" strokeOpacity={0.16} strokeDasharray="5 4" />
-      <text x="154" y="61" textAnchor="middle" fill="#76b900" fillOpacity={0.18} fontSize="22" fontFamily="Inter,sans-serif" fontWeight="700">?</text>
+      <line x1="100" y1="49" x2="118" y2="49" stroke={G} strokeWidth="2" strokeDasharray="4 3" strokeLinecap="round" opacity="0.7" />
+      <polyline points="114,43 121,49 114,55" fill="none" stroke={G} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.7" />
+      {/* Empty box */}
+      <rect x="128" y="20" width="84" height="58" rx="2" fill="none" stroke={G} strokeWidth="1.5" strokeDasharray="6 4" opacity="0.4" />
+      <text x="170" y="55" textAnchor="middle" fill={G} opacity="0.45" fontSize="24" fontFamily="Inter,sans-serif" fontWeight="700">?</text>
     </svg>
   )
 }
