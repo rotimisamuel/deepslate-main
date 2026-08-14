@@ -8,7 +8,7 @@ import { gsap, useGSAP } from '@/lib/gsap'
 
 const TEAM = [
   { href: '/team/founder', name: 'Rotimi Ogunsakin, PhD', role: 'Founder & Managing Director', focus: 'Digital Transformation · AI Strategy', bio: 'Academic, practitioner, and strategic advisor with deep experience in digital transformation and AI strategy across public and private sectors.' },
-  { href: '/team/ai', name: 'Gold Samuels', role: 'AI Strategy Lead', focus: 'AI Governance · Data Strategy', bio: 'Specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.' },
+  { href: '/team/ai', name: 'Franlin Onyeagba', role: 'AI Strategy Lead', focus: 'AI Governance · Data Strategy', bio: 'Specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.' },
   { href: '/team/education', name: 'Laud Ochei Charles, PhD', role: 'Head of Education', focus: 'Executive Learning · Programme Design', bio: 'Expert in executive education with a track record of designing and delivering high-impact leadership programmes for senior audiences.' },
 ]
 

@@ -22,13 +22,13 @@ const BIOS: Record<string, {
     education: ['PhD, [University]', 'MBA', 'Various executive education qualifications'],
   },
   ai: {
-    name: 'Gold Samuels',
+    name: 'Franlin Onyeagba',
     role: 'AI Strategy Lead',
     focus: ['AI Governance', 'Data Strategy', 'Responsible AI'],
     bio: [
-      'Gold Samuels is a specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.',
-      'With a background spanning data science, technology strategy, and organisational risk, Gold brings a distinctive perspective to AI strategy engagements — combining technical depth with an understanding of how organisations actually make decisions.',
-      "Gold leads DeepSlate's AI strategy practice, working with executive teams to navigate the rapidly evolving AI landscape — from initial readiness assessment through to governance framework development and ongoing advisory.",
+      'Franlin Onyeagba is a specialist in AI governance and data strategy, advising board-level clients on responsible AI adoption and policy frameworks.',
+      'With a background spanning data science, technology strategy, and organisational risk, Franlin brings a distinctive perspective to AI strategy engagements — combining technical depth with an understanding of how organisations actually make decisions.',
+      "Franlin leads DeepSlate's AI strategy practice, working with executive teams to navigate the rapidly evolving AI landscape — from initial readiness assessment through to governance framework development and ongoing advisory.",
     ],
     expertise: ['AI readiness assessment', 'AI governance frameworks', 'Data strategy', 'Responsible AI policy', 'AI risk management'],
     education: ['MSc Data Science', 'BSc Computer Science', 'Certified in AI Ethics'],
