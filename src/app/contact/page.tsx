@@ -126,7 +126,7 @@ export default function ContactPage() {
             </div>
             <div style={{ borderTop: '1px solid #e8e8e8', paddingTop: 28 }}>
               <h5 style={{ margin: '0 0 10px', fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#76b900' }}>Email</h5>
-              <a href="mailto:rotimi.ogunsakin@gmail.com" style={{ fontSize: 15, color: '#000', textDecoration: 'none', fontWeight: 700 }}>rotimi.ogunsakin@gmail.com</a>
+              <a href="mailto:info@deepslate.co.uk" style={{ fontSize: 15, color: '#000', textDecoration: 'none', fontWeight: 700 }}>info@deepslate.co.uk</a>
             </div>
             <div style={{ borderTop: '1px solid #e8e8e8', paddingTop: 28 }}>
               <h5 style={{ margin: '0 0 10px', fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#76b900' }}>LinkedIn</h5>

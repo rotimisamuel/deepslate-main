@@ -184,11 +184,11 @@ export default function Footer() {
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#76b900', marginBottom: 16 }}>
             Get in touch
           </div>
-          <a href="mailto:rotimi.ogunsakin@gmail.com"
+          <a href="mailto:info@deepslate.co.uk"
             style={{ display: 'block', fontFamily: 'Inter, sans-serif', fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none', lineHeight: 2, transition: 'color 0.15s' }}
             onMouseEnter={(e) => ((e.target as HTMLElement).style.color = '#76b900')}
             onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'rgba(255,255,255,0.55)')}>
-            rotimi.ogunsakin@gmail.com
+            info@deepslate.co.uk
           </a>
           {[
             { label: 'About', href: '/about' },

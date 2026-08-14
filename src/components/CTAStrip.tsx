@@ -103,7 +103,7 @@ export default function CTAStrip() {
           className="cta-btns"
           style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}
         >
-          <Link href="mailto:rotimi.ogunsakin@gmail.com" className="btn-primary" style={{ fontSize: 16, padding: '15px 36px' }}>
+          <Link href="mailto:info@deepslate.co.uk" className="btn-primary" style={{ fontSize: 16, padding: '15px 36px' }}>
             Get in Touch
           </Link>
           <Link href="#services" className="btn-outline-dark" style={{ fontSize: 16, padding: '14px 35px' }}>
