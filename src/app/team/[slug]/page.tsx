@@ -10,11 +10,11 @@ const BIOS: Record<string, {
   expertise: string[]; education: string[]
 }> = {
   founder: {
-    name: 'Rotimi Ogunsakin, PhD',
+    name: 'Rotimi Samuels, PhD',
     role: 'Founder & Managing Director',
     focus: ['Digital Transformation', 'AI Strategy', 'Executive Education'],
     bio: [
-      'Rotimi Ogunsakin is an academic, practitioner, and strategic advisor with deep experience in digital transformation and AI strategy across public and private sectors.',
+      'Rotimi Samuels is an academic, practitioner, and strategic advisor with deep experience in digital transformation and AI strategy across public and private sectors.',
       "As Founder and Managing Director of DeepSlate, Rotimi brings together a rare combination of academic rigour and real-world delivery experience. He has advised boards and executive teams across financial services, healthcare, government, and education on their most complex digital and AI challenges.",
       "Rotimi holds a PhD and has published widely on digital transformation, technology adoption, and organisational change. He brings this evidence base to every client engagement — ensuring that DeepSlate's advice is grounded in research, not just instinct.",
     ],
